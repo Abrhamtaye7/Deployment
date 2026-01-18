@@ -15,3 +15,9 @@ def welcome(request):
 
     job = send_welcome_email.delay(email)
     return Response({"task_id": job.id, "status": "queued"})
+
+# api/views.py
+
+def notify(request):
+    # your logic here
+    pass
