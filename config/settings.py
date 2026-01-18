@@ -35,7 +35,9 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = [h.strip() for h in os.getenv("ALLOWED_HOSTS", "").split(",") if h.strip()]
+# config/settings.py
 
+ALLOWED_HOSTS = ['deployment-k17z.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
